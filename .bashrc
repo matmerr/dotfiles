@@ -4,8 +4,8 @@ parse_git_branch() {
  }
 export PS1="\n\[$(tput sgr0)\]\[\033[38;5;10m\]\u\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;6m\]\H\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;15m\]: \[$(tput bold)\]\[\033[38;5;31m\]\w\[$(tput sgr0)\]\n\[$(tput sgr0)\]\[\033[38;5;31m\]\[$(tput bold)\][\D{%r}]\[$(tput sgr0)\]\[\033[38;5;10m\]\$(parse_git_branch)\[\033[38;5;15m\] \\$ \[$(tput sgr0)\]"
 
-alias k=kubectlalias 
-s=screen
+alias k=kubectl
+alias s=screen
 complete -F __start_kubectl k
 
 #kubectx and kubensexport 
